@@ -6,11 +6,11 @@
 #'
 #' @param df The API response to remove BOMs from.
 #' @export
-tidy_bom <- function(df) {
+strip_bom <- function(df) {
   
   got <- as.character(df)
   
-  got <- mnis_bom(got)
+  got <- tidy_bom(got)
   
   got
   

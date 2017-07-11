@@ -5,6 +5,6 @@
 #'
 #' @docType package
 #' @name emisc
-#' @useDynLib mnis, .registration = TRUE
+#' @useDynLib emisc, .registration = TRUE
 #' @importFrom Rcpp sourceCpp
 NULL

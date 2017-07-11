@@ -7,8 +7,8 @@ Author: Evan Odell [aut, cre]
 Maintainer: Evan Odell <evanodell91@gmail.com>
 Description: A collection of various R functions I've created. 
     They may or may not be useful to anyone else, and that may or may not duplicate existing work.
-URL: http://docs.evanodell.com/mnis
-BugReports: https://github.com/EvanOdell/mnis/issues
+URL: https://github.com/EvanOdell/emisc/
+BugReports: https://github.com/EvanOdell/emisc/issues
 License: MIT + file LICENSE
 LazyData: TRUE
 LinkingTo: Rcpp

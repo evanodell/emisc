@@ -14,10 +14,6 @@ camelCase(df)
 }
 \arguments{
 \item{df}{The dataframe, tibble, etc, with the variables you want to tidy.}
-
-\item{df}{The dataframe, tibble, etc, with the variables you want to tidy.}
-
-\item{df}{The dataframe, tibble, etc, with the variables you want to tidy.}
 }
 \value{
 A dataframe, tibble, etc, with snake_case style variable names.

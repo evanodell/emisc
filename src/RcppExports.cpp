@@ -5,35 +5,14 @@
 
 using namespace Rcpp;
 
-// mnis_bom
-std::string mnis_bom(std::string x);
-RcppExport SEXP emisc_mnis_bom(SEXP xSEXP) {
+// tidy_bom
+std::string tidy_bom(std::string df);
+RcppExport SEXP emisc_tidy_bom(SEXP dfSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
-    Rcpp::traits::input_parameter< std::string >::type x(xSEXP);
-    rcpp_result_gen = Rcpp::wrap(mnis_bom(x));
+    Rcpp::traits::input_parameter< std::string >::type df(dfSEXP);
+    rcpp_result_gen = Rcpp::wrap(tidy_bom(df));
     return rcpp_result_gen;
 END_RCPP
-}
-// rcpp_hello
-List rcpp_hello();
-RcppExport SEXP emisc_rcpp_hello() {
-BEGIN_RCPP
-    Rcpp::RObject rcpp_result_gen;
-    Rcpp::RNGScope rcpp_rngScope_gen;
-    rcpp_result_gen = Rcpp::wrap(rcpp_hello());
-    return rcpp_result_gen;
-END_RCPP
-}
-
-static const R_CallMethodDef CallEntries[] = {
-    {"emisc_mnis_bom", (DL_FUNC) &emisc_mnis_bom, 1},
-    {"emisc_rcpp_hello", (DL_FUNC) &emisc_rcpp_hello, 0},
-    {NULL, NULL, 0}
-};
-
-RcppExport void R_init_emisc(DllInfo *dll) {
-    R_registerRoutines(dll, NULL, CallEntries, NULL, NULL);
-    R_useDynamicSymbols(dll, FALSE);
 }

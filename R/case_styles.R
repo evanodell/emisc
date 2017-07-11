@@ -23,7 +23,6 @@ snake_case <- function(df) {
 }
 
 #' Convert variable names to period.case.
-#' @param df The dataframe, tibble, etc, with the variables you want to tidy. 
 #' @export
 #' @return A dataframe, tibble, etc, with period.case style variable names.
 #' @rdname case_styles
@@ -42,7 +41,7 @@ period.case <- function(df){
 }
 
 #' Convert variable names to camelCase.
-#' @param df The dataframe, tibble, etc, with the variables you want to tidy. 
+
 #' @export
 #' @return A dataframe, tibble, etc, with camelCase style variable names.
 #' @rdname case_styles
