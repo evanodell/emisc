@@ -1,0 +1,21 @@
+Package: emisc
+Type: Package
+Title: Evan Odell's various functions
+Version: 0.0.1
+Authors@R: person("Evan Odell", email="evanodell91@gmail.com", role=c("aut", "cre"))
+Author: Evan Odell [aut, cre]
+Maintainer: Evan Odell <evanodell91@gmail.com>
+Description: A collection of various R functions I've created. 
+    They may or may not be useful to anyone else, and that may or may not duplicate existing work.
+URL: http://docs.evanodell.com/mnis
+BugReports: https://github.com/EvanOdell/mnis/issues
+License: MIT + file LICENSE
+LazyData: TRUE
+LinkingTo: Rcpp
+Imports:
+    Rcpp (>= 0.12.10)
+RoxygenNote: 6.0.1
+Suggests: knitr,
+    rmarkdown,
+    testthat
+VignetteBuilder: knitr
