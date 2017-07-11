@@ -1,6 +1,6 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-[![Travis-CI Build Status](https://travis-ci.org/evanodell/emisc.svg?branch=master)](https://travis-ci.org/evanodell/emisc) [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/evanodell/emisc?branch=master&svg=true)](https://ci.appveyor.com/project/evanodell/emisc)
+[![Travis-CI Build Status](https://travis-ci.org/evanodell/emisc.svg?branch=master)](https://travis-ci.org/evanodell/emisc) [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/evanodell/emisc?branch=master&svg=true)](https://ci.appveyor.com/project/evanodell/emisc) [![DOI](https://zenodo.org/badge/96876145.svg)](https://zenodo.org/badge/latestdoi/96876145)
 
 emisc
 =====
