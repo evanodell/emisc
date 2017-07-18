@@ -5,10 +5,10 @@
 #'
 #' A wrapper for the \code{snake_case()}, \code{camelCase()}, and \code{period.case()} functions.
 #'
-#' @param df The dataframe, tibble, etc, with the variables you want to tidy. 
+#' @param df The dataframe, tibble, data.table, etc, with the variables you want to tidy. 
 #' @param case_style The style to convert variable names to. Accepts one of "snake_case", "camelCase" and "period.case". Defaults to "snake_case".
 #'
-#' @return A dataframe, tibble, etc, with new and consistent cases for variable names.
+#' @return A dataframe, tibble, data.table, etc, with new and consistent cases for variable names.
 #' @export
 #'
 #' @examples \dontrun{

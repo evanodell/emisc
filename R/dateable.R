@@ -2,7 +2,7 @@
 
 #' A function that locates all variables with "date" in the name (ignoring case), and converts them to POSIXct. Works on both dates and datetimes.
 #'
-#' @param df The tibble with the dates to be dated.
+#' @param df The dataframe, tibble, data.table, etc, with the dates to be dated.
 #' @export
 dateable <- function(df) {
   

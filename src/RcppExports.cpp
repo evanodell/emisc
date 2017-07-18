@@ -7,7 +7,7 @@ using namespace Rcpp;
 
 // tidy_bom
 std::string tidy_bom(std::string df);
-RcppExport SEXP emisc_tidy_bom(SEXP dfSEXP) {
+RcppExport SEXP _emisc_tidy_bom(SEXP dfSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;

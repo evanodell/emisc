@@ -7,12 +7,12 @@
 change_case(df, case_style = c("snake_case", "camelCase", "period.case"))
 }
 \arguments{
-\item{df}{The dataframe, tibble, etc, with the variables you want to tidy.}
+\item{df}{The dataframe, tibble, data.table, etc, with the variables you want to tidy.}
 
 \item{case_style}{The style to convert variable names to. Accepts one of "snake_case", "camelCase" and "period.case". Defaults to "snake_case".}
 }
 \value{
-A dataframe, tibble, etc, with new and consistent cases for variable names.
+A dataframe, tibble, data.table, etc, with new and consistent cases for variable names.
 }
 \description{
 A wrapper for the \code{snake_case()}, \code{camelCase()}, and \code{period.case()} functions.

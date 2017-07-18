@@ -8,10 +8,10 @@
  */
 
 /* .Call calls */
-extern SEXP emisc_tidy_bom(SEXP);
+extern SEXP _emisc_tidy_bom(SEXP);
 
 static const R_CallMethodDef CallEntries[] = {
-  {"emisc_tidy_bom", (DL_FUNC) &emisc_tidy_bom, 1},
+  {"_emisc_tidy_bom", (DL_FUNC) &_emisc_tidy_bom, 1},
   {NULL, NULL, 0}
 };
 

@@ -7,7 +7,7 @@
 dateable(df)
 }
 \arguments{
-\item{df}{The tibble with the dates to be dated.}
+\item{df}{The dataframe, tibble, data.table, etc, with the dates to be dated.}
 }
 \description{
 A function that locates all variables with "date" in the name (ignoring case), and converts them to POSIXct. Works on both dates and datetimes.
