@@ -26,6 +26,21 @@ knitr::opts_chunk$set(
 
 `emisc` is a collection of miscellaneous functions that I have made that may or may not be useful, and that may or may not duplicate existing work.
 
+
+## Functions
+
+[`case_styles`](https://docs.evanodell.com/emisc/reference/case_styles.html) - Convert variable names into one of three styles.
+
+[`change_case`](https://docs.evanodell.com/emisc/reference/change_case.html) - Changing variable cases.
+
+[`dateable`](https://docs.evanodell.com/emisc/reference/dateable.html)  - A function that locates all variables with "date" in the name (ignoring case), and converts them to POSIXct. Works on both dates and datetimes.
+
+[`strip_bom`](https://docs.evanodell.com/emisc/reference/strip_bom.html) - A function to strip Byte Order Marks (BOM) out of JSON data that is returned from some online API calls.
+
+[`tidy_bom`](https://docs.evanodell.com/emisc/reference/tidy_bom.html) - Internal Byte Order Mark stripper for `strip_bom`
+
+[`tidy_variables`](https://docs.evanodell.com/emisc/reference/tidy_variables.html) - Strip out most non-alphanumeric characters from variables
+
 ## Installation
 
 You can install `emisc` from github with:

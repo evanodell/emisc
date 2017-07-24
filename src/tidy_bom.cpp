@@ -2,7 +2,7 @@
 using namespace Rcpp;
 
 // tidy_bom
-//' A function to strip Byte Order Marks (BOM) out of JSON data that is returned from some online API calls.
+//' Internal function for \code{\link{strip_bom}}
 //'
 //' @param df The API response to remove BOMs from.
 //' @export

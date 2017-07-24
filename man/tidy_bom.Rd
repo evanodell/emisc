@@ -2,7 +2,7 @@
 % Please edit documentation in R/RcppExports.R
 \name{tidy_bom}
 \alias{tidy_bom}
-\title{A function to strip Byte Order Marks (BOM) out of JSON data that is returned from some online API calls.}
+\title{Internal function for \code{\link{strip_bom}}}
 \usage{
 tidy_bom(df)
 }
@@ -10,5 +10,5 @@ tidy_bom(df)
 \item{df}{The API response to remove BOMs from.}
 }
 \description{
-A function to strip Byte Order Marks (BOM) out of JSON data that is returned from some online API calls.
+Internal function for \code{\link{strip_bom}}
 }
