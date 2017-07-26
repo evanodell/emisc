@@ -1,5 +1,5 @@
 
-#' Write R data to a LaTeX file.
+#' Write R data to a LaTeX file
 #' 
 #' Write R data to a LaTeX file. Similar functions, such as \code{latex} in \code{Hmisc}, write data to a LaTeX table, but there may be instances where you don't want data in a table, hence this function. Columns will printed in the order specified. The function adds a newline between each item printed.
 #' 
