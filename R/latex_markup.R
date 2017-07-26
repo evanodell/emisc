@@ -1,5 +1,5 @@
 
-#' latex_markup
+#' Add LaTeX markup to R data.
 #' 
 #' Add LaTeX markup to R data.
 #' 

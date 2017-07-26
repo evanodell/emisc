@@ -2,7 +2,7 @@
 % Please edit documentation in R/latex_markup.R
 \name{latex_markup}
 \alias{latex_markup}
-\title{latex_markup}
+\title{Add LaTeX markup to R data.}
 \usage{
 latex_markup(df, ...)
 }

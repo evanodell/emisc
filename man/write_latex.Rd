@@ -2,7 +2,7 @@
 % Please edit documentation in R/write_latex.R
 \name{write_latex}
 \alias{write_latex}
-\title{write_latex}
+\title{Write R data to a LaTeX file.}
 \usage{
 write_latex(df, ..., file_name)
 }
