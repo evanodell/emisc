@@ -6,5 +6,9 @@
 #' @docType package
 #' @name emisc
 #' @useDynLib emisc, .registration = TRUE
+#' @importFrom purrr is_empty
+#' @importFrom rlang exprs quos abort
+#' @importFrom utils write.table
+#' @import dplyr
 #' @importFrom Rcpp sourceCpp
 NULL

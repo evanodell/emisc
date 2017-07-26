@@ -6,3 +6,4 @@
 ^appveyor\.yml$
 ^data-raw$
 ^_pkgdown\.yml$
+^README\.html$

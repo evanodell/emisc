@@ -1,8 +1,8 @@
 Package: emisc
 Type: Package
 Title: Evan Odell's various functions
-Version: 0.0.2
-Date: 2017-07-18
+Version: 0.0.3
+Date: 2017-07-26
 Authors@R: person("Evan Odell", email="evanodell91@gmail.com", role=c("aut", "cre"))
 Author: Evan Odell [aut, cre]
 Maintainer: Evan Odell <evanodell91@gmail.com>
@@ -14,9 +14,11 @@ License: MIT + file LICENSE
 LazyData: TRUE
 LinkingTo: Rcpp
 Imports:
-    Rcpp (>= 0.12.10)
+    purrr,
+    dplyr,
+    rlang,
+    Rcpp (>= 0.12.12)
 RoxygenNote: 6.0.1
 Suggests: knitr,
     rmarkdown,
     testthat
-VignetteBuilder: knitr
