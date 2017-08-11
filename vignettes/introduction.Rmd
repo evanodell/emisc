@@ -1,0 +1,14 @@
+---
+title: "The emisc package"
+author: "Evan Odell"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+## Introducing the `emisc` package
+
+`emisc` is a collection of R functions. They may or may not be useful to anyone else, and that may or may not duplicate existing work.

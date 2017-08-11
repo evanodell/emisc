@@ -1,4 +1,12 @@
 
+# emisc 0.0.4
+
+## Function Wrapper
+
+`write_latex` now has a `write_latex_lines` wrapper to make it more clear what the function does.
+
+Rearranged the order of parameters in `write_latex` from `(df, ..., file_name)` to `(df, file_name, ...)`
+
 # emisc 0.0.3
 
 ## New Functions

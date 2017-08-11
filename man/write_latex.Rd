@@ -2,9 +2,12 @@
 % Please edit documentation in R/write_latex.R
 \name{write_latex}
 \alias{write_latex}
+\alias{write_latex_lines}
 \title{Write R data to a LaTeX file}
 \usage{
 write_latex(df, ..., file_name)
+
+write_latex_lines(df, ..., file_name)
 }
 \arguments{
 \item{df}{The dataframe, data.table, tibble, etc, containing the data to write to LaTeX.}
