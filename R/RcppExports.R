@@ -6,6 +6,6 @@
 #' @param df The API response to remove BOMs from.
 #' @export
 tidy_bom <- function(df) {
-    .Call(`_emisc_tidy_bom`, df)
+    .Call('_emisc_tidy_bom', PACKAGE = 'emisc', df)
 }
 
