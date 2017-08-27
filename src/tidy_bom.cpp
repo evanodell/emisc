@@ -2,10 +2,10 @@
 using namespace Rcpp;
 
 // tidy_bom
-//' Internal function for \code{\link{strip_bom}}
-//'
-//' @param df The API response to remove BOMs from.
-//' @export
+// Internal function for \code{\link{strip_bom}}
+//
+// @param df The API response to remove BOMs from.
+// @export
 // [[Rcpp::export]]
 std::string tidy_bom(std::string df) {
   if (df.size() < 3)
