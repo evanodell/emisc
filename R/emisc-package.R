@@ -5,7 +5,7 @@
 #'
 #' @docType package
 #' @name emisc
-#' @useDynLib emisc, .registration = TRUE
+#' @useDynLib emisc
 #' @importFrom purrr is_empty
 #' @importFrom rlang exprs quos abort
 #' @importFrom utils write.table

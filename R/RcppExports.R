@@ -2,6 +2,6 @@
 # Generator token: 10BE3573-1514-4C36-9D1C-5A225CD40393
 
 tidy_bom <- function(df) {
-    .Call(`_emisc_tidy_bom`, df)
+    .Call('_emisc_tidy_bom', PACKAGE = 'emisc', df)
 }
 
