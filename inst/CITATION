@@ -7,6 +7,4 @@ bibentry(bibtype = "Manual",
          year = year,
          note = note,
          doi = "10.5281/zenodo.825637",
-         url = "https://github.com/evanodell/emisc")
-
-
+          url = "https://docs.evanodell.com/emisc")

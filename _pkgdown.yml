@@ -2,6 +2,10 @@ template:
   params:
    bootswatch: readable
    ganalytics: UA-90706059-1
+  #path: inst/pkgdown/templates
+  #assets: inst/pkgdown/assets
+  #default_assets: false
+
 
 name:
 navbar:
