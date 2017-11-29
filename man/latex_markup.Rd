@@ -7,18 +7,21 @@
 latex_markup(df, ...)
 }
 \arguments{
-\item{df}{The dataframe, data.table, tibble, etc, containing the data to add LaTeX markup to.}
+\item{df}{The dataframe, data.table, tibble, etc, containing the data to 
+add LaTeX markup to.}
 
-\item{...}{One or more unquoted, comma separated, variable names, with quoted Latex environment names (no backslashes or curly braces)/
+\item{...}{One or more unquoted variable names, with quoted Latex 
+environment names without backslashes or curly braces, separated by commas.
+Accepts asterisks, square brackets, etc.
 #@param markup_style}
 }
 \description{
-Add LaTeX markup to R data.
+Adds LaTeX markup to R data.
 }
 \examples{
 \dontrun{
 
-x <- latex_markup(iris, Species="section", Petal.Width="subsection*")#, markup_style="section")
+x <- latex_markup(iris, Species="section", Petal.Width="subsection*")
 
  # >  head(x)
  #    Sepal.Length Sepal.Width Petal.Length       Petal.Width           Species

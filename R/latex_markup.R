@@ -1,18 +1,21 @@
 
 #' Add LaTeX markup to R data.
 #' 
-#' Add LaTeX markup to R data.
+#' Adds LaTeX markup to R data.
 #' 
 #'
-#' @param df The dataframe, data.table, tibble, etc, containing the data to add LaTeX markup to.
-#' @param ... One or more unquoted, comma separated, variable names, with quoted Latex environment names (no backslashes or curly braces)/
+#' @param df The dataframe, data.table, tibble, etc, containing the data to 
+#' add LaTeX markup to.
+#' @param ... One or more unquoted variable names, with quoted Latex 
+#' environment names without backslashes or curly braces, separated by commas.
+#' Accepts asterisks, square brackets, etc.
 #' #@param markup_style
 #'
 #' @export
 #'
 #' @examples \dontrun{
 #' 
-#' x <- latex_markup(iris, Species="section", Petal.Width="subsection*")#, markup_style="section")
+#' x <- latex_markup(iris, Species="section", Petal.Width="subsection*")
 #' 
 #'  # >  head(x)
 #'  #    Sepal.Length Sepal.Width Petal.Length       Petal.Width           Species

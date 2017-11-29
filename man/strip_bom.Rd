@@ -2,7 +2,8 @@
 % Please edit documentation in R/strip_bom.R
 \name{strip_bom}
 \alias{strip_bom}
-\title{A function to strip Byte Order Marks (BOM) out of JSON data that is returned from some online API calls.}
+\title{A function to strip Byte Order Marks (BOM) out of JSON data that is 
+returned from some online API calls.}
 \usage{
 strip_bom(df)
 }
@@ -10,5 +11,6 @@ strip_bom(df)
 \item{df}{The API response to remove BOMs from.}
 }
 \description{
-A function to strip Byte Order Marks (BOM) out of JSON data that is returned from some online API calls.
+A function to strip Byte Order Marks (BOM) out of JSON data that is 
+returned from some online API calls.
 }

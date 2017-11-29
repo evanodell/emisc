@@ -13,14 +13,18 @@ period.case(df)
 camelCase(df)
 }
 \arguments{
-\item{df}{The dataframe, tibble, data.table, etc, with the variables you want to tidy.}
+\item{df}{The dataframe, tibble, data.table, etc, with the variables 
+you want to tidy.}
 }
 \value{
-A dataframe, tibble, data.table, etc, with snake_case style variable names.
+A dataframe, tibble, data.table, etc, with snake_case style 
+variable names.
 
-A dataframe, tibble, data.table, etc, with period.case style variable names.
+A dataframe, tibble, data.table, etc, with period.case 
+style variable names.
 
-A dataframe, tibble, data.table, etc, with camelCase style variable names.
+A dataframe, tibble, data.table, etc, with camelCase 
+style variable names.
 }
 \description{
 Convert variable names to snake_case.

@@ -1,10 +1,14 @@
 template:
   params:
-   bootswatch: readable
+   bootswatch: journal
    ganalytics: UA-90706059-1
   #path: inst/pkgdown/templates
   #assets: inst/pkgdown/assets
   #default_assets: false
+
+authors:
+  Evan Odell:
+    href: https://evanodell.com
 
 
 name:

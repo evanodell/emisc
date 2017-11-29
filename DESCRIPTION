@@ -1,22 +1,27 @@
 Package: emisc
 Type: Package
 Title: Evan Odell's various functions
-Version: 0.0.4
-Date: 2017-08-11
-Authors@R: person("Evan Odell", email="evanodell91@gmail.com", role=c("aut", "cre"))
+Version: 0.0.4.9000
+Date: 2017-11-29
+Authors@R: person("Evan Odell", email="evanodell91@gmail.com", role=c("aut", "cre"),  comment = c(ORCID = '0000-0003-1845-808X'))
 Author: Evan Odell [aut, cre]
 Maintainer: Evan Odell <evanodell91@gmail.com>
 Description: A collection of various R functions I've created. 
-    They may or may not be useful to anyone else, and that may or may not duplicate existing work.
+    They may or may not be useful to anyone else, and may or may not 
+    duplicate existing work. Includes functions to remove byte order marks 
+    (BOMs), write data to LaTeX as lines rather than tables, and changing
+    variable naming conventions.
 URL: https://github.com/EvanOdell/emisc/
 BugReports: https://github.com/EvanOdell/emisc/issues
 License: MIT + file LICENSE
+Depends: R(>= 3.3.3)
 LazyData: TRUE
 LinkingTo: Rcpp
 Imports:
     purrr,
     dplyr,
     rlang,
+    stringi,
     Rcpp (>= 0.12.12)
 RoxygenNote: 6.0.1
 Suggests: knitr,
