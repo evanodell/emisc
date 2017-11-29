@@ -16,9 +16,11 @@
 #' write to LaTeX.
 #' @param file_name File name of the tex file to write to. Overwrites any 
 #' existing files with the same name. If \code{file_name} does not end with 
-#' ".tex" it will be appended.
+#' ".tex" it will be appended to the file name.
 #' @param ... One or more unquoted, comma separated, variable names to write 
 #' to LaTeX. If blank, all variables will be written to LaTeX. 
+#' @param append If \code{TRUE}, appends data to existing file of the same 
+#' name. If \code{FALSE}, overwrites any existing file of the same name. 
 #'
 #' @export
 #'
@@ -28,7 +30,7 @@
 #' 
 #' }
 
-write_latex <- function(df, file_name, ...) {
+write_latex <- function(df, file_name, ..., append = FALSE) {
   
   lvars <- rlang::quos(...)
   
@@ -44,18 +46,6 @@ write_latex <- function(df, file_name, ...) {
   
   } 
   
-     if(length(lvars)!=0){
-   
-     for(i in 1:length(lvars)){
-  
-       df[[names(lvars)[i] ]] <- paste0("\\", lvars[[i]], "{", df[[names(lvars)[i] ]],"}")
-       
-     }
-       
-   }
-  
-  
-    file_name <- standardise_file_name(file_name, input = FALSE)
   
   if(stringi::stri_endswith_fixed(file_name, pattern = ".tex")==FALSE){
     
@@ -64,7 +54,7 @@ write_latex <- function(df, file_name, ...) {
   }
   
 
-  write.table(df, file=file_name, sep="\n\n", eol="\n\n", row.names=FALSE, col.names = FALSE, quote=FALSE)
+  write.table(df, file=file_name, append = append, sep="\n\n", eol="\n\n", row.names=FALSE, col.names = FALSE, quote=FALSE)
   
 }
 

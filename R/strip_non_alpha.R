@@ -28,7 +28,7 @@
 #'
 #'}
 
-strip_non_alpha <- function(df) {###not currently working, need to figure out this pattern issue
+strip_non_alpha <- function(df) {
 
   names(df) <- stringi::stri_replace_all_regex(str=names(df), pattern="[\\:~!@#$%^&*(){}+:\"<>?:,/;'\\u005B\\u005D]", replacement="")
   

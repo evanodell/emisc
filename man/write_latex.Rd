@@ -5,7 +5,7 @@
 \alias{write_latex_lines}
 \title{Write R data to a LaTeX file}
 \usage{
-write_latex(df, file_name, ...)
+write_latex(df, file_name, ..., append = FALSE)
 
 write_latex_lines(df, file_name, ...)
 }
@@ -15,10 +15,13 @@ write to LaTeX.}
 
 \item{file_name}{File name of the tex file to write to. Overwrites any 
 existing files with the same name. If \code{file_name} does not end with 
-".tex" it will be appended.}
+".tex" it will be appended to the file name.}
 
 \item{...}{One or more unquoted, comma separated, variable names to write 
 to LaTeX. If blank, all variables will be written to LaTeX.}
+
+\item{append}{If \code{TRUE}, appends data to existing file of the same 
+name. If \code{FALSE}, overwrites any existing file of the same name.}
 }
 \description{
 Write R data to a LaTeX file as individual lines. Similar functions, such 

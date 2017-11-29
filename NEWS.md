@@ -1,17 +1,19 @@
 
 
-# emisc 0.0.4.9000
+# emisc 0.0.5
 
 ## Function changes
 
-`tidy_variables()` is deprecated in favour of `strip_non_alpha()`
+`tidy_variables()` is deprecated in favour of `strip_non_alpha()`. `strip_non_alpha()` uses `stringi` for its internals, which is faster than the base R functions used in `tidy_variables()`.
+
+Added option to append data to `write_latex()`, rather than only being able to overwrite existing files.
 
 
 # emisc 0.0.4
 
 ## Function Wrapper
 
-`write_latex()` now has a `write_latex_lines` wrapper to make it more clear what the function does.
+`write_latex()` now has a `write_latex_lines()` wrapper to make it more clear what the function does.
 
 Rearranged the order of parameters in `write_latex()` from `(df, ..., file_name)` to `(df, file_name, ...)`
 
