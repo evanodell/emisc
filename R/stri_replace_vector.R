@@ -38,7 +38,7 @@ vector_stri_replace_all_fixed <- function(x, ..., progress=TRUE) {
   
   for (i in 1:length(rep_vars)){
     
-    x <- stringi::stri_replace_all_fixed(x, names(rep_vars)[i], rep_vars[[i]])
+    x <- stringi::stri_replace_all_fixed(x, names(rep_vars)[i], rep_vars[[i]], vectorize_all = FALSE)
     
     if(progress==TRUE){
       pb$tick()
