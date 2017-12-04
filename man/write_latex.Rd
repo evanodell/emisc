@@ -7,7 +7,7 @@
 \usage{
 write_latex(df, file_name, ..., append = FALSE)
 
-write_latex_lines(df, file_name, ...)
+write_latex_lines(df, file_name, ..., append = FALSE)
 }
 \arguments{
 \item{df}{The dataframe, data.table, tibble, etc, containing the data to 
@@ -38,7 +38,7 @@ printed. To add markup prior to printing, use the
 \examples{
 \dontrun{
 
-write_latex(iris, file_name = "iris.tex", Species, Petal.Width)
+#write_latex(iris, file_name = "iris.tex", Species, Petal.Width)
 
 }
 }

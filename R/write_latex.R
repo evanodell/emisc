@@ -26,7 +26,7 @@
 #'
 #' @examples \dontrun{
 #' 
-#' write_latex(iris, file_name = "iris.tex", Species, Petal.Width)
+#' #write_latex(iris, file_name = "iris.tex", Species, Petal.Width)
 #' 
 #' }
 
@@ -61,11 +61,4 @@ write_latex <- function(df, file_name, ..., append = FALSE) {
 
 #' @rdname write_latex
 #' @export
-write_latex_lines <- function(df, file_name, ...){
-  
-  write_latex(df, file_name, ...)
-  
-  
-}
-
-
+write_latex_lines <- write_latex

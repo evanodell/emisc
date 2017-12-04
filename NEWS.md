@@ -1,5 +1,12 @@
 
 
+# emisc 0.0.6
+
+## New function
+
+Introducing `vector_stri_replace_all_fixed()`, a wrapper for `stri_replace_all_fixed` in the `stringi` package.
+
+
 # emisc 0.0.5
 
 ## Function changes

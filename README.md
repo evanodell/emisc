@@ -1,0 +1,67 @@
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+# `emisc`
+
+[![License:
+MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/emisc)](https://cran.r-project.org/package=emisc)
+[![GitHub
+tag](https://img.shields.io/github/tag/evanodell/emisc.svg)](https://github.com/evanodell/emisc)
+[![](https://cranlogs.r-pkg.org/badges/grand-total/emisc)](https://dgrtwo.shinyapps.io/cranview/)
+[![Travis-CI Build
+Status](https://travis-ci.org/evanodell/emisc.svg?branch=master)](https://travis-ci.org/evanodell/emisc)
+[![AppVeyor Build
+Status](https://ci.appveyor.com/api/projects/status/github/evanodell/emisc?branch=master&svg=true)](https://ci.appveyor.com/project/evanodell/emisc)
+[![Coverage
+Status](https://img.shields.io/codecov/c/github/evanodell/emisc/master.svg)](https://codecov.io/github/evanodell/emisc?branch=master)
+[![DOI](https://zenodo.org/badge/96876145.svg)](https://zenodo.org/badge/latestdoi/96876145)
+
+# emisc
+
+`emisc` is a collection of miscellaneous functions that I have made that
+may or may not be useful, and that may or may not duplicate existing
+work. Full documentation is available at
+<https://docs.evanodell.com/emisc/>.
+
+## Functions
+
+[`case_styles()`](https://docs.evanodell.com/emisc/reference/case_styles.html)
+- Convert variable names into one of three
+styles.
+
+[`change_case()`](https://docs.evanodell.com/emisc/reference/change_case.html)
+- Changing variable cases.
+
+[`dateable()`](https://docs.evanodell.com/emisc/reference/dateable.html)
+- A function that locates all variables with “date” in the name
+(ignoring case), and converts them to POSIXct. Works on both dates and
+datetimes.
+
+[`latex_markup()`](https://docs.evanodell.com/emisc/reference/latex_markup.html)
+- Add LaTeX markup to
+variables.
+
+[`strip_bom()`](https://docs.evanodell.com/emisc/reference/strip_bom.html)
+- A function to strip Byte Order Marks (BOM) out of JSON data that is
+returned from some online API calls.
+
+[`tidy_bom()`](https://docs.evanodell.com/emisc/reference/tidy_bom.html)
+- Internal Byte Order Mark stripper for
+`strip_bom`
+
+[`tidy_variables()`](https://docs.evanodell.com/emisc/reference/tidy_variables.html)
+- Strip out most non-alphanumeric characters from
+variables
+
+[`write_latex()`](https://docs.evanodell.com/emisc/reference/write_latex.html)
+- Write variables to a LaTeX file in rows.
+
+## Installation
+
+You can install `emisc` from github with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("evanodell/emisc")
+```
