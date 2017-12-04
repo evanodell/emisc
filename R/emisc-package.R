@@ -14,5 +14,6 @@
 #' @importFrom utils write.table
 #' @import dplyr
 #' @import stringi
+#' #' @import progress
 #' @importFrom Rcpp sourceCpp
 NULL

@@ -22,6 +22,7 @@ Imports:
     dplyr,
     rlang,
     stringi,
+    progress,
     Rcpp (>= 0.12.12)
 RoxygenNote: 6.0.1
 Suggests: knitr,
