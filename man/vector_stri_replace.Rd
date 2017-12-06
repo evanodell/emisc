@@ -3,11 +3,17 @@
 \name{vector_stri_replace_all_fixed}
 \alias{vector_stri_replace_all_fixed}
 \alias{vector_stri_replace_all_fixed_}
-\title{A simple wrapper around \code{replace_all_fixed_vector}}
+\alias{vector_stri_replace_all_regex}
+\alias{vector_stri_replace_all_regex_}
+\title{vector_stri_replace}
 \usage{
 vector_stri_replace_all_fixed(x, ..., progress = TRUE)
 
 vector_stri_replace_all_fixed_(x, from, to, progress = TRUE)
+
+vector_stri_replace_all_regex(x, ..., progress = TRUE)
+
+vector_stri_replace_all_regex_(x, from, to, progress = TRUE)
 }
 \arguments{
 \item{x}{Character vector with strings to search in}
@@ -25,6 +31,9 @@ replacement pattern.}
 A character vector with strings replaced.
 }
 \description{
+A simple wrapper around \code{replace_all_fixed_vector}
+}
+\details{
 When using the \code{vector_stri_replace_all_fixed_}, which is suitable 
 for programming, the variables \code{from} and \code{to} must be character 
 vectors of equal length.

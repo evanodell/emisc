@@ -1,8 +1,7 @@
 
 
-
-
-
+#' vector_stri_replace
+#' 
 #' A simple wrapper around \code{replace_all_fixed_vector}
 #' 
 #' When using the \code{vector_stri_replace_all_fixed_}, which is suitable 
@@ -19,7 +18,7 @@
 #' @return A character vector with strings replaced.
 #'
 #' @export 
-#' @rdname vector_stri_replace_all_fixed
+#' @rdname vector_stri_replace
 vector_stri_replace_all_fixed <- function(x, ..., progress=TRUE) {
   
   rep_vars <- rlang::dots_list(...)
@@ -51,7 +50,7 @@ vector_stri_replace_all_fixed <- function(x, ..., progress=TRUE) {
 }
 
 #' @export 
-#' @rdname vector_stri_replace_all_fixed
+#' @rdname vector_stri_replace
 
 vector_stri_replace_all_fixed_ <- function(x, from, to, progress=TRUE) {
   
@@ -69,7 +68,74 @@ vector_stri_replace_all_fixed_ <- function(x, from, to, progress=TRUE) {
   
   for (i in 1:length(from)){
     
-    x <- stringi::stri_replace_all_fixed(x, from[[i]], to[[i]])
+    x <- stringi::stri_replace_all_fixed(x, from[[i]], to[[i]], vectorize_all = FALSE)
+    
+    if(progress==TRUE){
+      pb$tick()
+    }
+    
+  }
+  
+  x
+  
+}
+
+
+#' @export 
+#' @rdname vector_stri_replace
+
+vector_stri_replace_all_regex <- function(x, ..., progress=TRUE) {
+  
+  rep_vars <- rlang::dots_list(...)
+  
+  #from <- as.character(from)
+  #to <- as.character(to)
+  
+  if (length(rep_vars)==0) {
+    abort("")
+  }
+  
+  
+  if(progress==TRUE){
+    pb <- progress::progress_bar$new(total = length(rep_vars))
+  }
+  
+  for (i in 1:length(rep_vars)){
+    
+    x <- stringi::stri_replace_all_regex(x, names(rep_vars)[i], rep_vars[[i]], vectorize_all = FALSE)
+    
+    if(progress==TRUE){
+      pb$tick()
+    }
+    
+  }
+  
+  x
+  
+}
+
+
+
+#' @export 
+#' @rdname vector_stri_replace
+
+vector_stri_replace_all_regex_ <- function(x, from, to, progress=TRUE) {
+  
+  from <- as.character(from)
+  to <- as.character(to)
+  
+  if (length(from)!=length(to)) {
+    abort("Please ensure both lists are of equal length")
+  }
+  
+  
+  if(progress==TRUE){
+    pb <- progress::progress_bar$new(total = length(from))
+  }
+  
+  for (i in 1:length(from)){
+    
+    x <- stringi::stri_replace_all_regex(x, from[[i]], to[[i]], vectorize_all = FALSE)
     
     if(progress==TRUE){
       pb$tick()
