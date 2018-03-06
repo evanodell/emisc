@@ -34,7 +34,8 @@ latex_markup <- function(df, ...) {
    
    if (all(names(mvars) %in% names(df))==FALSE) {
      
-     rlang::abort("Please ensure all variables listed are correct, and that they have a markup style assigned.")
+     rlang::abort("Please ensure all variables listed are correct, and that 
+                  they have a markup style assigned.")
    
      }
    
@@ -42,7 +43,8 @@ latex_markup <- function(df, ...) {
    
      for(i in 1:length(mvars)){
   
-       df[[names(mvars)[i] ]] <- paste0("\\", mvars[[i]], "{", df[[names(mvars)[i] ]],"}")
+       df[[names(mvars)[i] ]] <- paste0("\\", mvars[[i]],
+                                        "{", df[[names(mvars)[i] ]],"}")
        
      }
        

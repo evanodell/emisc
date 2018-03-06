@@ -1,5 +1,11 @@
 
 
+# emisc 0.0.7
+
+Dropping `vector_stri_replace_all_fixed()` because it doesn't add anything (turns out stringi already does what this function was meant to do)
+
+Fixed a bug with some functions still calling the deprecated `tidy_variables()`
+
 # emisc 0.0.6
 
 ## New function

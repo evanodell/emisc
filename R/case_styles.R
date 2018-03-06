@@ -10,7 +10,7 @@
 #' @rdname case_styles
 snake_case <- function(df) {
   
-  df <- emisc::tidy_variables(df)
+  df <- emisc::strip_non_alpha(df)
   
   names(df) <- gsub("\\.", "_", names(df))
   
@@ -31,7 +31,7 @@ snake_case <- function(df) {
 #' @rdname case_styles
 period.case <- function(df){
   
-  df <- emisc::tidy_variables(df)
+  df <- emisc::strip_non_alpha(df)
   
   names(df) <- gsub("\\.\\.", ".", names(df))
   
@@ -51,7 +51,7 @@ period.case <- function(df){
 #' @rdname case_styles
 camelCase <- function(df){
   
-  df <- emisc::tidy_variables(df)
+  df <- emisc::strip_non_alpha(df)
   
   names(df) <- gsub("(^|[^[:alnum:]])([[:alnum:]])", "\\U\\2", names(df), perl = TRUE)
   
