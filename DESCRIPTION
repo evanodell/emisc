@@ -10,7 +10,7 @@ Description: A collection of various R functions I've created.
     duplicate existing work. Includes functions to remove byte order marks 
     (BOMs), write data to LaTeX as lines rather than tables, and changing
     variable naming conventions.
-URL: https://github.com/EvanOdell/emisc/
+URL: https://github.com/EvanOdell/emisc/ https://docs.evanodell.com/emisc
 BugReports: https://github.com/EvanOdell/emisc/issues
 License: MIT + file LICENSE
 Depends: R(>= 3.4.0)

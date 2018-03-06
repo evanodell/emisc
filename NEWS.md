@@ -1,5 +1,4 @@
 
-
 # emisc 0.0.7
 
 Dropping `vector_stri_replace_all_fixed()` because it doesn't add anything (turns out stringi already does what this function was meant to do)
@@ -11,7 +10,6 @@ Fixed a bug with some functions still calling the deprecated `tidy_variables()`
 ## New function
 
 Introducing `vector_stri_replace_all_fixed()`, a wrapper for `stri_replace_all_fixed` in the `stringi` package.
-
 
 # emisc 0.0.5
 
